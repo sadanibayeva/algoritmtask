@@ -1,0 +1,1256 @@
+pdfede ilk 8task
+
+1-10ededcemi
+let cem=0
+for(let i=0;i<10;i++){
+    cem+=i;
+}
+alert(cem)
+
+1-10 ededhasil
+let hasil=1;
+for(let i=1;i<10;i++){
+    hasil*=i;
+}
+alert(hasil)
+
+
+1-100 cuteded
+for(let i=1;i<=100;i++){
+    if(i%2==0){
+        console.log(i);
+    }
+}
+
+
+1-100 cuteded cemi
+let cem=0;
+for(let i=1;i<=100;i++){
+    if(i%2==0){
+        cem+=i;
+    }
+}
+alert(cem)
+
+1-100 cuteded hasil
+let hasil=1;
+for(let i=1;i<=100;i++){
+    if(i%2==0){
+    hasil*=i;
+    }
+}
+console.log(hasil)
+
+
+3reqemli eded edediorta
+let cem=0, say=0,ededi_orta=0;
+for(let i=100;i<999;i++){
+    cem+=i;
+    say++;
+    ededi_orta=cem/say;
+}
+alert(cem);
+alert(say);
+alert(ededi_orta)
+
+
+
+3reqemlieded 7ve8e bolunen
+for(let i=100;i<999;i++){
+    if(i%7==0 && i%8==0){
+        alert(i)
+    }
+}
+
+
+3reqemlieded 7ve8e bolunen ededcemi
+let cem=0;
+for(let i=100;i<999;i++){
+       if(i%7==0 && i%8==0){
+              cem+=i;
+       }
+}
+alert(cem)
+
+
+3reqemlieded 7ve8e bolunen ilkeded
+for(let i=100;i<999;i++){
+         if(i%7==0 && i%8==0){
+         alert(i)
+         break;
+         }
+}
+
+1den 100e qeder sade ve murekkeb ededleri tapin 
+for(let i=1;i<100;i++){
+  let say=0;
+  for(let j=1;j<=i;j++){
+    if(i%j==0){
+        say++
+    }
+    }
+    if(say>2){
+        console.log(i+" "+"murekkebdir")
+    }
+    else if(say==2){
+        console.log(i+" "+"sadedir")
+    }
+    else{
+        console.log(i+" "+"ne sadedir ne murekkeb")
+    }
+}
+    
+
+verilmish 3ededden max ve min tapin
+let a=8; b=5; c=2; max=0;min=0;
+if(a>b && a>c ){
+       max=a;
+       if(b>c)
+       min=c;
+       else
+       min=b;
+}
+else if(b>a && b>c){
+       max=b;
+       if(c>a)
+       min=a;
+       else
+       min=c;
+}
+else if(c>a && c>b){
+       max=c;
+       if(a>b)
+       min=b;
+       else
+       min=a
+}
+alert(max)
+alert(min)
+
+
+ikireqemli ededlerden 3 ve 6ya bolunen ededlerin 9a bolunmesi
+let say=0;
+for(let i=10;i<=99;i++)
+{
+    if(i%3==0 && i%6==0){
+       console.log(i)
+       
+       if(i%9==0){
+        say++;
+       }
+    }
+}
+console.log(say)
+
+
+3reqemli ededler icinden sade ededi sec
+for(let i=100;i<=999;i++){
+    let say=0;
+    for( let j=1;j<=i;j++){
+        if(i%j==0){
+            say++
+        }
+    }
+    if(say<=2){
+       console.log(i+" "+"sadedir")
+    }
+}
+
+
+Ikireqemli cut eded edediorta/hendesiorta
+let cem=0, hasil=1, say=0,edediorta=0, hendesiorta=0, k;
+for(let i=10;i<100; i++){
+    if(i%2==0){
+        cem+=i;
+        say++;
+        hasil*=i
+    }
+}
+edediorta=cem/say;
+hendesiorta=Math.pow(hasil,1/say);
+k=(edediorta/hendesiorta).toFixed(3);
+console.log(k);
+
+
+verilmish n sayda natural eded max tapilmasi
+var arr=new Array(5);
+let max=0;
+for(var i=0;i<arr.length;i++){
+    arr[i]=+prompt(`$arr{i}-ci ededi daxil edin:`);
+    if(arr[i]>max)
+{
+        max=arr[i];
+    }
+}
+console.log(max);
+array doldurulmuyubsa arr[0]cisi diyende exception olur. buna gore de max or min=0 yazrq. amma array dolubsa her iki yol duzdu
+hemde sen max=arr[0] yazirsan axi 0'ci index hemin vaxt yoxdur undefineddir. soram arrayi doldurursan, buna gore de undefined olur netice
+// or
+let arr=[-8,-6,-7,-4,-2];
+let max=0;
+let max=arr[0];
+for(var i=0;i<arr.length;i++){
+    if(arr[i]>max)
+{
+        max=arr[i];
+    }
+}
+console.log(max);
+// or
+var arr = new Array(4);
+for(var i=0;i<arr.length;i++){
+    arr[i]=+prompt('$arr[i]-ci ededi daxil edin :');
+}
+max=arr[0];
+for(var i=0;i<arr.length;i++){
+    if(arr[i]>max){
+        max=arr[i];
+    }
+}
+console.log(max);
+
+
+verilmish 4reqeemli natural ededin reqemlerin ayir
+1ciyol
+let b=1234;
+alert(b.toString().split(""));
+2ciyol
+let b=1234;
+let t=Math.floor(b%100%10) //yada b%10;
+let o=Math.floor((b/10)%10);
+let y=Math.floor((b/100)%10);
+let m=Math.floor((b/1000));
+console.log(m,y,o,t);
+
+
+verilmish n natural ededlerin bolenlerin muey etmek
+let n=+prompt("eded daxil ed")
+say=0;
+for(let i=1;i<n;i++)
+{
+    if(n%i==0){
+    say++
+        console.log(say);
+    }
+}
+
+
+N natural ededden necesinin 6 ve 4e boleni var
+let say=0;
+let n=+prompt("eded daxil et")
+for(let i=1;i<n;i++){
+    if(i%4==0 && i%6==0){
+        alert(i)
+        say++
+    }
+}
+ alert(say)
+
+
+N natural eded edediortasi 
+let sum=0, say=0, edediorta=0;
+let n=+prompt("eded daxil et")
+for(let i=0; i<n; i++){
+    sum+=i;
+    say++;
+}
+edediorta=sum/say;
+alert(edediorta)
+
+
+N heqiqi ededlerden necesi tamdir
+1ciyol
+let n=+prompt("eded daxil et");
+alert(Number.isInteger(n));
+2ciyol
+n=+prompt("eded daxil ed:")
+if(!Number.isInteger(n)){
+    console.log("tam deil")
+}
+else{
+    console.log("tamdir")
+}
+
+
+
+10 natural ededden sade ve murekkebi ayir ve saylarini tap
+let sadesay = 0;
+let murekkebsay = 0;
+for(let i=0;i<10;i++){
+    let say=0;
+for(let j=1;j<=i;j++){
+    if(i%j==0){
+        say++;
+    }
+    }
+if(say>2){
+    console.log(i+" "+"murekkebdir");
+    murekkebsay++;
+}
+else if(say==2){
+    console.log(i+" "+"sadedir");
+    sadesay++;
+}
+else{
+    console.log(i+" "+"ne sadedir ne murekkeb")
+}
+}
+console.log("cemi sade say: " + sadesay);
+console.log("cemi murekkeb say: " + murekkebsay);
+
+
+ucreqemlieded icinden 3eqaliqsz bolunen necedene hem 24 ve 48e bolunur
+let say=0;
+for(let i=100; i<1000; i++){
+    if(i%3==0){
+        if(i%24==0 && i%48==0){
+            say++;
+        }
+    }
+}
+alert(say)
+
+
+cut eded ceminin tek eded cemine nisbeti
+let sumt=0, sumc=0, k;
+for(let i=10;i<100; i++){
+    if(i%2==0){
+        sumc+=i;
+    }
+    else if(i%2==1){
+        sumt+=i;
+    }
+}
+k=sumc/sumt;
+console.log(k)
+
+
+
+n natural ededi vuruqlarina ayrmaq ucun prg
+let k=+prompt("eded daxil et");
+for(let i=1;i<=k;i++){
+    if(k%i==0){
+         console.log(i)
+    }
+} 
+
+
+n natural ededden necesi 5ve15in mislidir
+let say=0;
+let p=+prompt("eded daxil et")
+for(let i=1;i<=p;i++){
+    if(i%5==0 && i%15==0){
+      say++
+      console.log(i)
+    }
+}
+console.log(say)
+
+
+
+25in misli olan butun 3reqemli tek eddedlerin cemin tapilmasi
+let sum=0;
+for(let i=100;i<1000;i++){
+    if(i%25==0){
+       if(i%2==1){
+        sum+=i;
+        console.log(i)
+       }
+    }
+}
+console.log(sum)
+
+
+
+verilmish 12ardicil natural ededlern edediorta/hendesiorta
+let cem=0, say=0, hasil=1, hendesiorta=0, edediorta=0, k;
+for(let i=1;i<=4;i++){
+    cem+=i;
+    hasil*=i
+      say++
+}
+edediorta=cem/say;
+hendesiorta=Math.pow(hasil,1/say);
+k=edediorta/hendesiorta;
+console.log(k);
+
+
+
+verilmish n sayda natural edededen min tapilmasi
+let arr=[2,5,9,4];
+let min=arr[0];
+let min=0;
+for(var i=0;i<arr.length;i++){
+    arr[i]=+prompt(`$arr{i}-ci ededi daxil edin:`);
+    if(arr[i]<min){
+        min=arr[i];
+    }
+}
+console.log(min);
+2ci yol
+console.log(Math.min(...arr))
+or
+var arr=new Array(4);
+let min=0;
+for(var i=0;i<arr.length;i++){
+    if(arr[i]<min)
+{
+        min=arr[i];
+    }
+}
+console.log(min);
+
+
+
+task1.array elem cemi
+let arr=[2,4,5,6,8], sum=0;
+for(let i=0;i<arr.length; i++){
+    sum+=arr[i];
+}
+console.log(sum)
+
+
+task1.array elem hasili
+let arr=[2,4,5,6,8], hasil=1;
+for(let i=0;i<arr.length; i++){
+    hasil*=arr[i];
+}
+console.log(hasil)
+
+
+
+verilmish eded tam eded olub,olmamasn yoxluyn
+let n=+prompt("eded daxil et");
+alert(Number.isInteger(n));
+
+
+ixtyari 5 heqiqi ededden necesi tam,necesi natural,necesi kesr
+let tamsay=0;
+let kesrsay=0;
+let arr=[];
+for(let i=0;i<5;i++){
+    arr[i]=+prompt(`${i+1}-ci ededi daxil edin: `);
+}
+for(let i=0;i<5;i++){
+    if(Math.floor(arr[i])==arr[i] && arr[i]>0){
+        console.log(`${arr[i] }-tam, musbet`);
+        tamsay++;
+    }
+        else if(Math.floor(arr[i])==arr[i] && arr[i]<0){
+            console.log(`${arr[i] }-tam, menfi`);
+            tamsay++;
+        }
+            if(arr[i]!=Math.floor(arr[i]) && arr[i]>0){
+            console.log(`${arr[i] }-heqiqi,kesr, musbet`);
+            kesrsay++;
+             }
+            else if(arr[i]!=Math.floor(arr[i]) && arr[i]<0){
+            console.log(`${arr[i] }-heqiqi,kesr, menfi`);
+            kesrsay++;
+             }
+             else if(arr[i]==0){
+                console.log(`${arr[i]}-sifir`)
+            }
+}
+console.log("tam say:" + tamsay);
+console.log("kesr say:"+ kesrsay);
+
+
+uc natral ededin herbirnin bolenini muey et
+let p=+prompt("eded daxil et")
+for(let i=1;i<=p;i++){
+    if(p%i==0){
+        alert(i)
+    }
+}
+let k=+prompt("eded daxil et")
+for(let i=1;i<p;i++){
+    if(k%i==0){
+        alert(i)
+    }
+}
+let j=+prompt("eded daxil et")
+for(let i=1;i<p;i++){
+    if(j%i==0){
+        alert(i)
+    }
+}
+
+
+
+n natural ededin reqem cemi
+let sum=0;
+let b=1234;
+let test=b.toString().split("");
+for(i=0;i<test.length;i++){
+    sum+=+test[i]
+}
+console.log(sum);
+console.log(test);
+
+
+
+//10natural ededden teklerin edediortasi/cutlerin edediortasi
+let sumt=0, sumc=0, edediortat=0, edediortac=0, sayc=0, sayt=0;
+for(let i=0;i<=5;i++)
+{
+if(i%2==0){
+    sumc+=i;
+    sayc++;
+}
+else if(i%2==1){
+    sumt+=i;
+    sayt++;
+}
+}
+tam;
+edediortat=sumt/sayt;
+edediortac=sumc/sayc;
+console.log(edediortac)
+console.log(edediortat)
+
+
+
+pdfdeki tasklar
+
+
+i-- sebebi oduki, i=0dan baslayr jnin 1 2 3 4cu ves. elemleri yoxlayr eyni olanda hemin i-nin elemtin silir. geri qayidanda for da 
+artiq i=1 olms olr ona gore i-- yazrqki i=0dan baslasn ve yene yoxlasn silinenden soraki elementden baslayaraq. 
+task2.arrayin icindeki tekrarlanan elementn silinmesi
+let arr=[4,48,7,4,48,4,2,46];
+for(let i=0;i<arr.length;i++){
+    //for(let j=0;j<arr.length;j++){
+    for(let j=i+1;j<arr.length;j++){
+        //j=i+1 cunki oznden soraki elem muqayise etsn deye
+        // if(i!=j){
+            {
+            if(arr[i]==arr[j]){
+                arr.splice(i,1);
+              i--;}
+                //soraki elem silinenin yerne dushr deye muqayise etmek olmr yaddan cxr
+                // delete arr[i]; bosluq saxlayr meslehet deil
+        }
+    }
+}
+console.log(...arr);
+
+
+arrayda eded olmyan elementleri sil
+let arr=["a","b",7,"c",8,true,false,5,3];
+for(let i=0;i<arr.length;i++){
+    if(typeof arr[i]!="number")
+        {
+        arr.splice(i,1);
+            i--;
+        }
+}     
+console.log(arr)
+
+
+sozu tersine cevren funksiya 1ciyol
+//once
+let soz=prompt("sozu daxil et")
+for(let i=0;i<soz.length;i++){
+    console.log(soz)
+}
+//sonra
+let word=prompt("wordu daxil et");
+let ters="";
+for(let i=word.length-1;i>=0;i--){
+        ters+=word[i];   
+}
+console.log(ters)
+
+
+sozu tersine cevren funksiya 2ciyol
+let soz=prompt("sozu daxil et")
+function reverse(a){
+    let ters="";
+    for(let i=a.length-1;i>=0;i--){
+        ters+=a[i];
+    }
+    console.log(ters)
+}
+reverse(soz)
+
+
+cumleni ters cevren func
+once
+let cumle=prompt("cumleni yaz")
+for(let i=0;i<cumle.length;i++){
+    console.log(cumle)
+}
+//sonra
+let sentence=prompt("cumleni yaz")
+let ters="";
+for(let i=sentence.length-1;i>=0;i--){
+    ters+=sentence[i];
+}
+console.log(ters)
+
+
+verilmish ededin boluneni olan butun 3reqemli ededleri cxarn
+let n=+prompt("eded daxil et")
+for(let i=100;i<=n;i++){
+    if(n%i==0){
+        console.log(i)
+    }
+}
+  
+
+MEN BUNU ANLAMADIM ????????????????????????????????????????????????????????????????????????????????????????????
+
+daxil edilen ededi sozle yazan func(mes->input:1, output:Bir)
+let num=+prompt("eded daxil et")
+function words(){
+    let teklik = ['sifir','bir', 'iki', 'uc', 'dord', 'besh', 'alti', 'yeddi', 'sekkiz', 'doqquz'];
+    let onluq = ['on', 'iyirmi', 'otuz', 'qirx', 'elli', 'altmish', 'yetmish', 'seksen', 'doxsan'];
+    let tdey="";
+    let odey="";
+    let ydey="";
+
+for(let i=0;i<10;i++){
+    if(num%10==i){
+        tdey=teklik[i]
+    }
+    else if(num%10==0){
+        tdey=''
+    }
+    if(Math.floor(num/10)==i){
+        odey=onluq[i-1]
+    }
+    else if(Math.floor((num%100)/10)==i){
+        odey=onluq[i-1]
+    }
+    if(Math.floor(num/100)==i){
+        ydey=teklik[i]+"yuz"
+    }else  if(Math.floor(num/100)==1){
+        ydey="yuz"
+    }
+    else if(num%100==0){
+        ydey=''
+    }
+}
+console.log(ydey+" "+odey+" "+tdey);
+console.log(ydey);
+}
+console.log(words());
+    if (num < 0) throw new Error('Negative numbers are not supported.');
+  
+    if (num === 0) return 'zero';
+  
+    //the case of 1 - 20
+    if (num < 20) {
+      return ones[num];
+    }
+  
+    if (numString.length === 2) {
+      return tens[numString[0]] + ' ' + ones[numString[1]];
+    }
+  
+    //100 and more
+    if (numString.length == 3) {
+      if (numString[1] === '0' && numString[2] === '0')
+        return ones[numString[0]] + ' hundred';
+      else
+        return ones[numString[0]] + ' hundred and ' + convert(+(numString[1] + numString[2]));
+    }
+  
+    if (numString.length === 4) {
+      var end = +(numString[1] + numString[2] + numString[3]);
+      if (end === 0) return ones[numString[0]] + ' thousand';
+      if (end < 100) return ones[numString[0]] + ' thousand and ' + convert(end);
+      return ones[numString[0]] + ' thousand ' + convert(end);
+    }
+
+
+
+verilmish cumlede sozlerin sayni tapin
+let cumle=prompt();
+console.log(cumle)
+let text=cumle.split(" ");
+console.log(text.length)
+
+
+
+verilmish cumlede artiq bosluq simvollarn silin
+let cumle="dog     is        animal"
+// console.log(cumle)
+let txt=cumle.split(" ");
+// console.log(txt)
+let newstring=""
+for(let i=0;i<cumle.split(" ").length;i++){
+    if(cumle.split(" ")[i]!=''){
+        newstring+=cumle.split(" ")[i]+" "
+        // console.log(txt[i]);
+    }
+}
+console.log(newstring.trim());
+consoleda yeniden trim elemesinin sebebi birden cumle evvel ve sonunda bosluq qoysan onu da duzenlesin diye
+trim ortadaki bosluqlari silmir ancaq evvel ve sondaki
+
+
+
+2tarix arasndaki intervali tapin
+let date1=new Date(2021,04,30);
+let date2=new Date(2022,02,22);
+let ferqvaxt=date2.getTime() - date1.getTime();
+console.log(ferqvaxt)
+Bu san qaytarir il gun istesek hamsn ayrica yaz+ ile topla
+
+
+
+2 tarix arasndaki gun sayni tapin
+let date1=new Date("4,30,2022");
+let date2=new Date("2,22,2022");
+let ferqtarix=date2.getTime()-date1.getTime();
+console.log(ferqtarix)
+let ferqgun=Math.ceil(ferqtarix/(1000*60*60*24))
+console.log(ferqgun+"gun")
+ferqgun+"gun ->ferqi qaytarir yanindada gun sozunu
+
+
+
+12 ededi hansi 2 ededin cemi ola biler
+let a=12,k,b;
+for(k=0;k<12;k++){
+    for(b=0;b<12;b++){
+        if(k+b==12){
+            console.log(k,b)
+        }
+    }
+}
+
+
+
+task30)3reqemli ededin reqemleri cemi
+//1ciyol
+let sum=0;
+let b=134;
+let test=b.toString().split("");
+for(i=0;i<test.length;i++){
+    sum+=+test[i]
+}
+console.log(sum);
+console.log(test);
+//2ciyol
+let a=+prompt("eded daxil et")
+let sum=0;
+let cem=a.toString().split("")
+console.log(cem);
+for(let i=0;i<cem.length;i++){
+    sum+=Number(cem[i])
+}
+console.log(sum)
+//3cuyol
+let k=4568,sum=0;
+let t=Math.floor(k%10);
+let o=Math.floor((k/10)%10);
+let y=Math.floor((k/100)%10);
+let m=Math.floor((k/1000));
+sum=t+o+y+m;
+console.log(sum)
+
+
+task29)Verilmish metnde "ADNA" sozlerni "ADNSU" sozuyle evez edin  /g/ nedi?
+let metn="Bu gun 10 milyon telebe ADNA-ya qebul olub. Onlardan coxu 500den cox bal toplayib.Esasen en yaxshi uni sayilan ADNA oldugu ucun telebelerin coxu ora qebul olmaq isteyr."
+let newmetn=metn.replace(/ADNA/g,"ADNSU")
+console.log(newmetn)
+
+BURDAN BASHLA  - 5ine bax 5inede o biri gun fso)
+
+
+19.verilmish metnde cumlenin ilk soznde olan bash herfin boyuk yazilmasi
+1ciyol
+let cumle="salam bu gun hava gozeldir. men mektebe getmiyecem. men mektebe getmiyecem.";
+let txt=cumle.split(" ");
+let newstring=""
+for(let i=0;i<txt.length;i++){
+    if(txt[i]!=''){
+        newstring+=txt[i]+" "
+    }
+}
+console.log(newstring);
+let res='';
+for(let i=0;i<newstring.length;i++){
+    if(newstring[i-2]=='.'  || i==0){
+        res+=newstring[i].toUpperCase()
+    }
+    else{
+        res+=newstring[i];
+    }
+}
+console.log(res.trim());
+2ciyol-yalniz ilk cumlenin bash herfin boyudur
+let txt=text.split(" ")[0].split("")[0].toUpperCase() + text.substring(1);
+console.log(txt)
+//or
+let text=prompt("metn daxil et");
+let txt=text.split(" ")[0].slice(0,1).toUpperCase() + text.substring(1);
+console.log(txt) 
+
+
+
+
+2 arrayin eyniliyini yoxlayin
+1ciyol-bu yol sehvdi cunki, 1ci indexle 0ci indexi yoxluyur gorur ferqlidi alinmir
+let arr1=[2,4,5,6,7,5]
+let arr2=[3,4,6,7,2,1]
+for(let i=0;i<arr1.length;i++){
+    for(let j=i+1;j<arr2.length;j++){
+        if(arr1[i]=arr2[j]){
+            console.log(`${arr1[i],arr2[i]}-eynidir`)
+        }
+        else{
+            console.log(`${arr1[i],arr2[i]}-eyni deil`)
+        }
+    }
+}
+2ciyol-bu dogru
+const first = [2, 4, 6, 7, 1];
+const second = [4, 1, 7, 6, 2];
+const areEqual = (first, second) => {
+   if(first.length !== second.length){
+      return false;
+   };
+   for(let i = 0; i < first.length; i++){
+      if(!second.includes(first[i])){
+         return false;
+      };
+   };
+       return true;
+};
+console.log(areEqual(first, second));
+
+
+array elementleri azalan sirayla duzun sort metodundan istifade etmeden
+let arr=[2,9,8,5,1];
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr.length;j++){
+         if(arr[i]>arr[j]){
+         a=arr[j];
+         arr[j]=arr[i];
+         arr[i]=a;
+        }
+    }
+}
+console.log(...arr)
+
+
+telebe melum oznde saxlayan object yaradn.imthndan kecmeyenleri siin
+let imthn_bal;
+let telebeler=[
+    {
+        ad:"Aslan",
+        Soyad:"Qasimov",
+        ixtisas:"itif",
+        imtahan_giris:35,
+        imthn_bal:22
+    },
+    {
+        ad:"Aslixan",
+        Soyad:"Qacarov",
+        ixtisas:"neftqaz",
+        imtahan_giris:35,
+        imthn_bal:16
+    },
+    {
+        ad:"Ayan",
+        Soyad:"Qacarova",
+        ixtisas:"muellim",
+        imtahan_giris:23,
+        imthn_bal:22
+    }
+]
+for(let i=0;i<telebeler.length;i++){
+    if(telebeler[i].imthn_bal>=17 && telebeler[i].imthn_bal+telebeler[i].imtahan_giris>=51){
+        console.log(`imthni-kecen`)
+        // console.log(telebeler[i]);
+    }
+    else{
+        // console.log(`imthndan-kesilen`)
+        // console.log(telebeler[i]);
+        telebeler.splice(i)
+    }
+    // console.log(telebeler[i]);
+
+}
+console.log(telebeler);
+
+ 
+
+boyuk metn daxil et.istifadeciden tek soz gotur.o tek sozun metnde nece dene oldgna bax
+let text=prompt("cumle daxil et");
+let soz=prompt("soz daxil et");
+let cumlesozu=text.split(" ");
+let say=0;
+for(var i=0;i<cumlesozu.length;i++){
+    if(cumlesozu[i].toLowerCase()==soz.toLowerCase()){
+        say++;
+    }
+    else{
+        console.log("bu soz cumlede yoxdu");
+    }
+}
+console.log(say);
+
+
+let metn="hello, my name is Sedan. what is your name.how are you? how do yu doing that exactly?my fav book is this."
+function call() {
+    let text=document.querySelector("#test").value;
+    console.log(text)
+}
+
+
+
+verilmis metnde tekrarlanan sozlerin sayni tapin 
+// 1ciyol asan yol
+let str="bugun yagis yagir, axsama dogru guclu kulek esecek, amma yagis yagmayacaq, amma kulek olacaq, olacaq."
+let splstr=str.split(" ");
+// console.log(splstr);
+for(var i=0;i<splstr.length;i++){
+ let word = splstr[i];
+ let symbol = word[word.length - 1];
+//  console.log(symbol);
+ if (symbol == "," || symbol == ".") {
+   splstr[i] = word.substring(0, word.length - 1);
+ }
+}
+let say=0;
+for(var i=0;i<splstr.length;i++){
+    for(var j=i+1;j<splstr.length;j++){
+        if(splstr[i]==splstr[j]){
+            say++;
+            console.log(splstr[i]);
+        }
+    }
+}
+console.log(say);
+2ciyol
+const str = "big black bug bit a big black dog on his big black nose";
+const findDuplicateWords = str => {
+   const strArr = str.split(" ");
+   const res = [];
+   for(let i = 0; i < strArr.length; i++){
+    // console.log(strArr.indexOf(strArr[i])+" "+strArr[i]);
+    // console.log(strArr.lastIndexOf(strArr[i])+" "+strArr[i]);
+      if(strArr.indexOf(strArr[i]) !== strArr.lastIndexOf(strArr[i])){
+        // console.log(strArr[i]);
+         if(!res.includes(strArr[i])){
+            res.push(strArr[i]);
+         };
+      };
+   };
+   return res.join(" ");
+bosluq birlesdirmek ucundu
+};
+console.log(findDuplicateWords(str));
+3cuyol
+let metn = "big black bug black big black";
+      let soz = metn.split(" ");
+      let arr = [];
+      for (let i = 0; i < soz.length; i++) {
+        let say = 0;
+        for (let j = i; j < soz.length; j++) {
+          if (soz[i] == soz[j]) {
+            say++;
+          }
+        }
+        if (!arr.includes(soz[i])) {
+          arr.push(soz[i]);
+        }
+        if (arr.length <= i) {
+          break;
+        }
+          console.log(`${arr[i]}-${say}`);
+      }
+4cuyol
+let str = "big black bug bit a big black dog on his big black nose";
+let count=0;
+for(let i=0;i<str.length;i++){
+    for(let j=i+1;j<str.length;j++){
+        if(arr[i]==arr[j]){
+            count++;
+        }
+       else if(arr[i]!=j++){
+    }
+}
+}
+
+
+verilmis 2 metnin oxsharliq emsalin hesablayin(3ardicil sozun eyniliyine esasen)
+let metn1="Salam menim adim Sədandir. Men ADNSU-da bakalavr oxuyuram.";
+// 1orginal esas
+let metn2="Salam menim adim Leyladir. Men BMU-da magistr oxuyuram."
+let metnn1=metn1.split(" ");
+let counter=0;
+for(let i=0;i<metnn1.length;i++){
+    counter++;
+        if(metn2.includes(metnn1[i])){
+                   if(counter === 3) {
+                        console.log("true");
+                        break;
+                    }
+ } 
+    else {
+    if(counter > 0)
+       counter = 0;
+    console.log("false");
+    }
+}
+
+
+
+task28)ishcilerin 1saatliq emek haqqi ve heftelik ish saatlari verildikde, 
+ayliq emek haqqnin hesablanmasi ucun prg yaz.
+Heftelik 40 saatdan artiq ish saati ucun emek haqqi 2qat hesablansin.
+let saathesabdeyeri=+prompt("saathesabdeyeri daxil et")
+let ishcisaat=+prompt("ishcisaat daxil et")
+let ishcimaash=0
+if(ishcisaat<40){
+    ishcimaash=ishcisaat*saathesabdeyeri
+}else{
+    ishcimaash=(40*saathesabdeyeri)+(ishcisaat-40)*saathesabdeyeri*2
+}
+console.log(ishcimaash);
+
+
+
+document.querySelector("#add").addEventListener("click",function () {
+        let m2=metn.split(" ");
+        let  count=0;
+        for(let i=0;i<m2.length;i++){
+            if(m2[i].includes(test.value))
+            {
+            count++;
+            }
+        }
+    console.log(count);
+})
+
+
+let letter=document.getElementById("2")
+console.log(letter)
+
+
+
+//girisde massiv verilsin +1 ile reqem massivi cixis olsun
+var reqem=[2,3,4];
+var plusOne = function(digits) {
+    let yeni="";
+    for(var i=0;i<digits.length;i++){
+        yeni+=digits[i];
+        // console.log(yeni)
+    }
+    var eded = Number(yeni);
+       sonuc=eded+1;
+    //    console.log(sonuc);
+    var str = String(sonuc);
+    var arr = [...str];
+console.log(arr);
+}
+plusOne(reqem);
+
+
+
+//palindromlugu yoxla
+var reqem=131;
+var str=reqem.toString();
+var isPalindrome = function(x) {
+    for(var i=0;i<x.length;i++){
+        for(var j=x.length-1;j>=0;j--){
+            if(x[i]==x[j]){
+                console.log("bu palindromdur")
+            }
+            else{
+                console.log("bu palindrom deil");
+            }
+        }
+    }
+}
+isPalindrome(str);
+2ci yol
+var reqem=131;
+var str=reqem.toString();
+let newstr=''
+var isPalindrome = function(x) {
+    for(var i=0;i<x.length;i++){
+        newstr+=x[i]
+    }
+    let yeni=''
+    for(var i=x.length-1;i>=0;i--){
+        yeni+=x[i];
+    }
+    if(newstr==yeni){
+        console.log("polindromdu");
+    }
+    else{
+        console.log("deil");
+    }
+}
+isPalindrome(str);
+
+
+
+//massiv verilir ve hedef var, hansi index cemi hedefi verirse o indexi qaytar
+var nums=[3,4,6];
+var target=7;
+var twoSum = function(nums, target) {
+   var son=[];
+   for(var i=0;i<nums.length;i++){
+      for(var j=i+1;j<nums.length;j++){
+          if(nums[i]+nums[j]==target){
+            console.log(i,j);
+            }     
+        }
+    }
+}
+twoSum(nums,target);
+
+
+
+//Add two number
+var l1=[2,4,3];
+var l2=[5,6,4];
+ var yenil1=[];
+ var yenil2=[];
+ var cem=[];
+var addTwoNumbers = function(l1, l2) {
+    for(var i=l1.length-1;i>=0;i--){
+        yenil1+=l1[i];
+        var sayi1=parseInt(yenil1)
+    }
+    for(var i=l2.length-1;i>=0;i--){
+        yenil2+=l2[i];
+        var sayi2=parseInt(yenil2)
+    }
+    cem=sayi1+sayi2;
+    var sonuc=cem.toString();
+    var sonarr=[];
+    for(var i=sonuc.length-1;i>=0;i--){
+        sonarr+=sonuc[i];
+    }
+    console.log([...sonarr]);
+}
+addTwoNumbers(l1,l2)
+
+
+
+// tekrarlari cix hansi herf var onu qaytar
+var s="abcdabcdffgghhh";
+var yeni=s.split('');
+var lengthOfLongestSubstring = function(s) {
+   for(var i=0;i<s.length;i++){
+       for(var j=i+1;j<s.length;j++){
+           if(s[i]==s[j]){
+                  yeni.splice(i,1);
+                  i--;
+                }
+            }
+        }
+   console.log(yeni.length)
+};
+lengthOfLongestSubstring(yeni);
+
+
+
+// MEDIAN
+var nums1 = [1,7,6,5];
+var nums2 = [2];
+var mergedArray;
+var findMedianSortedArrays = function(nums1, nums2) {
+    mergedArray = nums1.concat(nums2);
+    for (var i = 0; i < mergedArray.length; i++) {
+        for (var j = 0; j < mergedArray.length; j++) {
+            if (mergedArray[i] < mergedArray[j]) {
+                var temp = mergedArray[j];
+                mergedArray[j] = mergedArray[i];
+                mergedArray[i] = temp;
+            }
+        }
+    }
+    if (mergedArray.length % 2 === 0) {
+        // Əgər uzunluq cütdürsə, median iki orta elementin ortasıdır.
+        var middle1 = mergedArray.length / 2;
+        var middle2 = middle1 - 1;
+        var median = (mergedArray[middle1] + mergedArray[middle2]) / 2;
+        console.log("Median:", median);
+    } else {
+        // Əgər uzunluq təkdirsə, median orta elementdir.
+        var middle = Math.floor(mergedArray.length / 2);
+        var median = mergedArray[middle];
+        console.log("Median:", median);
+    }
+}
+findMedianSortedArrays(nums1, nums2);
+
+
+
+
+
+const input="{}";
+function isValid(s) {
+    const stack = [];
+    for (let i = 0; i < s.length; i++) {
+        const char = s[i];
+        if (char === '(') {
+            stack.push(')');
+        } else if (char === '{') {
+            stack.push('}');
+        } else if (char === '[') {
+            stack.push(']');
+        } else if (char !== stack.pop()) {
+            return false;
+        }
+    }
+    return stack.length === 0;
+}
+console.log(isValid(input));
+
+
+
+//hedef ve massiv
+var nums = [1, 3, 5, 6];
+var target = 8;
+var searchInsert = function(nums, target) {
+    if (nums.includes(target)) {
+        return nums.indexOf(target); // target varsa indexi gotur
+    } else {
+        // target numsda yoxdusa elave et sirala indexi gotur
+        nums.push(target);
+            for (var i = 0; i <nums.length; i++) {
+               for (var j = 0; j < nums.length; j++) {
+                  if (nums[i] < nums[j]) {
+                       var temp = nums[j];
+                       nums[j] = nums[i];
+                       nums[i] = temp;
+                    }
+                 }
+         }
+         console.log([...nums])
+         console.log(nums.indexOf(target));
+     }
+        }
+var result = searchInsert(nums, target);
+
+
+
+//pilleken
+var element=5;
+var n=[0,1,2,3,4,5,6,7,8,9,10];
+var arr=[];
+var climbStairs = function(n) {
+    for(var i=0;i<n.length;i++){
+        for(var j=i+1;j<n.length;j++){
+            if(n[i]+n[j]==element){
+                console.log(n[i],n[j]);
+                console.log(n[j],n[i]);
+               arr.push([n[i] + "," + n[j]]) && arr.push([n[j] + "," + n[i]])
+            }
+        }
+    }
+    console.log(arr.length);
+}
+climbStairs(n);
+
+
